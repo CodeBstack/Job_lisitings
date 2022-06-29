@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="8d3bb340a0c6f2bf88ab1c35660940f5">
+ 
+  <link rel="stylesheet" href="12adf0669173bd54a321da4d94777e24">
+  <script type="module" defer="" src="0554273c08811d8dcae53a19da1e4d34"></script>
+
+
+  <title>Frontend Mentor | Job Listings</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style data-parcel-key="13adcaf9022ac049c3e0c23b08a749c6">
+    .attribution { font-size: 11px; text-align: left; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+<section id="section">
+  <div class="container">
+    <!-- Item 1 -->
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione non sed, assumenda aspernatur nemo optio rem cumque debitis. Aut tenetur corporis eligendi suscipit voluptatem reprehenderit adipisci praesentium recusandae numquam necessitatibus?
+    <div class="item item-1"></div>
+  </div>
+</section>
+  
+
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+
+</body>
+</html>

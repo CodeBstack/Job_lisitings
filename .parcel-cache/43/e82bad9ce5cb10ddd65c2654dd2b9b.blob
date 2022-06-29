@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "League Spartan", sans-serif;
+}
+
+#section {
+  width: 100vw;
+}
+
+.bg-img__mobile img {
+  background-color: hsl(181, 56%, 39%);
+}
+.bg-img__desktop {
+  background-color: hsl(181, 56%, 39%);
+  display: none;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  align-items: center;
+  gap: 1rem;
+  /* justify-content: center; */
+  margin-top: 1rem;
+}
+
+.item {
+  align-self: center;
+  border: 1px solid red;
+}
+
+@media (min-width:576px) and (max-width{
+    .bg-img__desktop{
+        display: block;
+    }
+    .bg-img__mobile{
+        display: none;
+    }
+}

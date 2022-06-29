@@ -1,0 +1,9 @@
+const state = function () {};
+
+state();
+fetch("./data.json").then(response => {
+  console.log(response);
+  return response.json();
+}).then(data => {
+  console.log(data);
+});

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="8d3bb340a0c6f2bf88ab1c35660940f5">
+
+    <link rel="stylesheet" href="12adf0669173bd54a321da4d94777e24">
+    <script type="module" defer="" src="0554273c08811d8dcae53a19da1e4d34"></script>
+
+    <link rel="preconnect" href="64890df949e24b5c782b8cc8544e9ec5">
+    <link rel="preconnect" href="da9afb61e15e5caa1c8af2c6f046c478" crossorigin="">
+    <link href="ec47fb9a7dac5a2a64cd3d2e2fa3493a" rel="stylesheet">
+
+    <title>Frontend Mentor | Job Listings</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: left;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style> -->
+  </head>
+  <body>
+    <section id="section">
+      <div class="bg-img__mobile">
+        <img src="828529e2058deee0fc0c93938cd16ed5" alt="">
+      </div>
+      <div class="bg-img__desktop">
+        <img src="731a848588be56b826ec64e93906bb05" alt="">
+      </div>
+      <div class="container">
+        <!-- Item 1 -->
+        <div class="item item-1">
+          <div class="item-img">
+            <img src="750b15681ffb42f03803a5ed3cfdd829" alt="">
+          </div>
+          <div class="left-side">
+            <div class="item-content">
+              <div class="company_name">
+                <h3>Photosnap</h3>
+                <span class="new">NEW!</span>
+                <span class="featured">FEATURED</span>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+  </body>
+</html>

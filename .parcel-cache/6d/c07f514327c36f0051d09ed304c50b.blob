@@ -1,0 +1,21 @@
+// const data = function () {
+//   fetch("./data.json")
+//     .then((response) => {
+//       console.log(response);
+//       return response.json();
+//     })
+//     .then((data) => {
+//       console.log(data);
+//       return data;
+//     });
+// };
+// console.log(data());
+const data2 = async function () {
+  const response = await fetch("./data.json");
+  console.log(response);
+  const data = await response.json();
+  return data;
+};
+
+const data = await data2();
+console.log(data[0]);

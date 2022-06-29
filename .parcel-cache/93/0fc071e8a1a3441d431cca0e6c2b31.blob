@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "League Spartan", sans-serif;
+  background-color: hsl(180, 52%, 96%);
+}
+
+#section {
+  width: 100vw;
+}
+
+.bg-img__mobile img {
+  width: 100vw;
+  background-color: hsl(181, 56%, 39%);
+}
+.bg-img__desktop img {
+  width: 100vw;
+  background-color: hsl(181, 56%, 39%);
+  display: none;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.item {
+  width: 90%;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.company {
+  display: flex;
+  gap: 1rem;
+  margin: 0.5rem 0;
+}
+
+.company-name {
+  font-weight: 700;
+  color: hsl(181, 56%, 39%);
+}
+
+.new {
+  border-radius: 10px;
+  background-color: hsl(181, 56%, 39%);
+  /* height: 20px; */
+  padding: 10px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.info:first-child {
+  list-style-type: none;
+}
+
+@media (min-width: 640px) and (max-width: 1596px) {
+  .bg-img__desktop img {
+    display: block;
+  }
+  .bg-img__mobile img {
+    display: none;
+  }
+}

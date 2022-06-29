@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "League Spartan", sans-serif;
+}
+
+#section{
+    width: 100vw;
+    height: 100;
+}
+/*# sourceMappingURL=style.836c5944.css.map */

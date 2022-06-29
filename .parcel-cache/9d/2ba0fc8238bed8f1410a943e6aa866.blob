@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "League Spartan", sans-serif;
+}
+
+#section{
+    width: 100vw;
+}
+
+.bg-img__mobile{
+  background-image: url(24512472d201f953a155ad9e551fbf60); 
+    background-color: red;
+}
+.bg-img__mobile img{
+    /* width: 100%; */
+}

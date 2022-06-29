@@ -1,0 +1,92 @@
+const container = document.querySelector(".container");
+
+const data2 = async function () {
+  const response = await fetch("./data.json"); //   console.log(response);
+
+  const data = await response.json();
+  return data;
+};
+
+const data = await data2();
+
+const render = function (data) {
+  //   console.log(data);
+  // {
+  //     "id": 1,
+  //     "company": "Photosnap",
+  //     "logo": "./images/photosnap.svg",
+  //     "new": true,
+  //     "featured": true,
+  //     "position": "Senior Frontend Developer",
+  //     "role": "Frontend",
+  //     "level": "Senior",
+  //     "postedAt": "1d ago",
+  //     "contract": "Full Time",
+  //     "location": "USA Only",
+  //     "languages": ["HTML", "CSS", "JavaScript"],
+  //     "tools": []
+  //   },
+  const html = `
+    <div class="item item-1">
+          <div class="item-img">
+            <img src="${data.logo}" alt="" />
+          </div>
+
+          <div class="item-content">
+            <div class="company">
+              <h3 class="company-name">${data.company}</h3>
+              <p><span class="new">${data.new ? "NEW!" : ""}</span></p>
+              <p><span class="featured">${data.featured ? "FEATURED" : ""}</span></p>
+            </div>
+            <h3 class="position">${data.position}</h3>
+            <ul class="infos">
+              <li class="info">${data.postedAt}</li>
+              <li class="info">${data.contract}</li>
+              <li class="info">${data.location}</li>
+            </ul>
+          </div>
+          <hr />
+          <div class="right-items">
+            <div class="personal-info">
+              <div><h3 class="role">${data.role}</h3></div>
+              <div><h3 class="level">${data.level}</h3></div>
+            </div>
+
+            <div class="languages">
+            <div><h3 class="language">${data.languages.length >= 1 ? data.languages[0] : ""}</h3></div>
+            <div><h3 class="language">${data.languages.length >= 2 ? data.languages[1] : ""}</h3></div>
+            <div><h3 class="language">${data.languages.length == 3 ? data.languages[3] : ""}</h3></div>
+            </div>
+            <div class="tools">
+            ${data.tools.map(data => renderTools(data))}
+            </div>
+          </div>
+        </div>
+    `;
+  container.insertAdjacentHTML("beforeend", html);
+};
+
+const languageContainer = document.querySelector(".languages");
+console.log(languageContainer);
+
+const renderLanguages = function (data) {
+  const html = `
+    <div><h3 class="language">${data}</h3></div>
+    `;
+};
+
+const renderTools = function (data) {
+  //   console.log(data);
+  const html = `
+    <div><h3 class="language">${data}</h3></div>
+    `;
+};
+
+data.forEach(data => {
+  console.log(data.languages);
+  data.languages.forEach((language, i) => console.log(language, i));
+  render(data);
+}); // const renderData = data.map((data, i) => {
+//   data.languages.map((data) => console.log(data));
+// });
+// console.log(renderData);

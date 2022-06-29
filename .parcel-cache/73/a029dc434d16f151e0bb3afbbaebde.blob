@@ -1,0 +1,14 @@
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _default = data2 = async function () {
+  const response = await fetch("./data.json");
+  const data = await response.json();
+  return data;
+};
+
+exports.default = _default;

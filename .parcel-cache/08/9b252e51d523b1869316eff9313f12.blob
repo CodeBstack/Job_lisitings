@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.bb8f0744.png">
+ 
+  <link rel="stylesheet" href="/style.836c5944.css">
+  <script type="module" defer="" src="/controller.caeb7f58.js"></script>
+
+
+  <title>Frontend Mentor | Job Listings</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>.attribution { font-size: 11px; text-align: left; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJtYXBwaW5ncyI6IkFBQUEiLCJzb3VyY2VzIjpbIi4vaW5kZXguaHRtbCJdLCJzb3VyY2VzQ29udGVudCI6W251bGxdLCJuYW1lcyI6W10sInZlcnNpb24iOjMsImZpbGUiOiJzdGF0aWMtam9iLWxpc3RpbmdzLW1hc3Rlci4zYzk0M2UwNC5jc3MubWFwIiwic291cmNlUm9vdCI6Ii9fX3BhcmNlbF9zb3VyY2Vfcm9vdC8ifQ== */
+</style>
+</head>
+<body>
+<section id="section">
+  
+  <div class="container">
+    <!-- Item 1 -->
+    <div class="item item-1"></div>
+  </div>
+</section>
+  
+
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.bb8f0744.png">
+
+    <link rel="stylesheet" href="/style.836c5944.css">
+    <script type="module" defer="" src="/controller.caeb7f58.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@200;400;500;600;700&display=swap" rel="stylesheet">
+
+    <title>Frontend Mentor | Job Listings</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: left;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style> -->
+  </head>
+  <body>
+    <section id="section">
+      <div class="bg-img__mobile">
+        <img src="/bg-header-mobile.d1f89961.svg" alt="">
+      </div>
+      <div class="bg-img__desktop">
+        <img src="/bg-header-desktop.3539418e.svg" alt="">
+      </div>
+      <div class="container">
+        <!-- Item 1 -->
+        <div class="item item-1">
+          <div class="item-img">
+            <img src="/photosnap.b8ac23af.svg" alt="">
+          </div>
+
+          <div class="item-content">
+            <div class="company_name">
+              <h3>Photosnap</h3>
+              <span class="new">NEW!</span>
+              <span class="featured">FEATURED</span>
+            </div>
+            <p class="position">Senior Fronted Developer</p>
+            <ul class="infos">
+              <li class="info">1d ago</li>
+              <li class="info">Full Time</li>
+              <li class="info">USA only</li>
+            </ul>
+          </div>
+
+          <div class="languages">
+            <div class="language">Frontend</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+  </body>
+</html>

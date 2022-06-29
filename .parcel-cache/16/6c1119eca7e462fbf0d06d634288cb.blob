@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "League Spartan", sans-serif;
+}
+
+#section {
+  width: 100vw;
+}
+
+.bg-img__mobile img {
+  width: 100vw;
+  background-color: hsl(181, 56%, 39%);
+}
+.bg-img__desktop img {
+  width: 100vw;
+  background-color: hsl(181, 56%, 39%);
+  display: none;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.item {
+  width: 90%;
+  pading
+  align-self: center;
+  border: 1px solid red;
+}
+
+@media (min-width: 640px) and (max-width: 1596px) {
+  .bg-img__desktop img {
+    display: block;
+  }
+  .bg-img__mobile img {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=style.836c5944.css.map */

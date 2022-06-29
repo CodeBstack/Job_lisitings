@@ -1,0 +1,11 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(bg-header-mobile.d1f89961.svg);
+
+}
+/*# sourceMappingURL=style.836c5944.css.map */

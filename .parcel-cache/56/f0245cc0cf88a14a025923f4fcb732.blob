@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "League Spartan", sans-serif;
+  background-color: hsl(180, 52%, 96%);
+}
+
+#section {
+  width: 100vw;
+}
+
+.bg-img__mobile img {
+  width: 100vw;
+  background-color: hsl(181, 56%, 39%);
+}
+.bg-img__desktop img {
+  width: 100vw;
+  background-color: hsl(181, 56%, 39%);
+  display: none;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 4rem;
+}
+
+.item {
+  width: 90%;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid red; */
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 10px 30px;
+  /* position: relative; */
+}
+
+.item-img {
+  margin-top: -2.5rem;
+}
+
+.item-img img {
+  width: 4rem;
+}
+
+.company {
+  display: flex;
+  gap: 1rem;
+  margin: 0.5rem 0;
+}
+
+.company-name {
+  font-weight: 700;
+  color: hsl(181, 56%, 39%);
+}
+
+.new {
+  border-radius: 10px;
+  background-color: hsl(181, 56%, 39%);
+  padding: 5px 7px;
+  color: #fff;
+}
+.featured {
+  border-radius: 10px;
+  background-color: hsl(180, 14%, 20%);
+  padding: 5px 7px;
+  color: #fff;
+}
+
+.position {
+  margin-top: 1rem;
+}
+
+.infos {
+  display: flex;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+.info {
+  margin-right: 0.8rem;
+}
+
+.info:first-child {
+  list-style-type: none;
+}
+
+hr {
+  margin: 1rem 0;
+}
+
+.languages {
+  margin-top: 0.5rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.language {
+  color: hsl(181, 56%, 39%);
+  border-radius: 2px;
+  background-color: hsl(180, 52%, 96%);
+  padding: 10px 7px;
+}
+
+@media (min-width: 640px) and (max-width: 1596px) {
+  .bg-img__desktop img {
+    display: block;
+  }
+  .bg-img__mobile img {
+    display: none;
+  }
+}

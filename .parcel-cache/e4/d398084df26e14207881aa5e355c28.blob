@@ -1,0 +1,2 @@
+const data = model.state();
+console.log(data);

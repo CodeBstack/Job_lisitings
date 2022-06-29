@@ -1,0 +1,1 @@
+{"mappings":"AAAA;IACI,SAAS;IACT,UAAU;IACV,sBAAsB;AAC1B;A;AAEA;IACI,uDAAqD;AACzD","sources":["./src/style.css"],"sourcesContent":["*{\r\n    margin: 0;\r\n    padding: 0;\r\n    box-sizing: border-box;\r\n}\r\n\r\nbody{\r\n    background-image: url(../images/bg-header-mobile.svg);\r\n}"],"names":[],"version":3,"file":"style.836c5944.css.map","sourceRoot":"/__parcel_source_root/"}
