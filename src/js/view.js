@@ -1,10 +1,79 @@
 export default class App {
   _parentElement = document.querySelector('.container');
+  _inputContainer = document.querySelector('.inputs');
   data;
+  language;
+  langArr = [];
+
   constructor(data) {
+    this.data = data;
+    this._iterateData(data);
+    this._getClickedItem(data);
+    this._removeSearch();
+  }
+
+  _iterateData(data) {
     data.forEach(data => {
       this.render(data);
     });
+  }
+
+  // _filter(data, langArr) {
+  //   this.data = data;
+  // }
+
+  _renderSearch(inputText, data) {
+    const html = `
+      <div class="input-1">
+        <h3>${inputText}</h3>
+        <button class="clear-each"><span class="span">&times</span></button>
+      </div>
+    `;
+    this._inputContainer.insertAdjacentHTML('beforeend', html);
+
+    // for (let i = 0, l = this._inputContainer.children; i <= l; i++)
+    //   console.log(this._inputContainer.childElementCount);
+    //   // console.log(this._inputContainer.children[i].children[0].textContent);
+    // this.langArr.push(
+    //   this._inputContainer.children[i].children[0].textContent
+    // );
+  }
+
+  _removeSearch() {
+    this._inputContainer.addEventListener(
+      'click',
+      function (e) {
+        // if (
+        //   e.target.classList.contains('clear-each') ||
+        //   e.target.classList.contains('span')
+        // )
+        console.log(this.langArr);
+      }.bind(this)
+    );
+  }
+
+  _getClickedItem(data) {
+    this._parentElement.addEventListener(
+      'click',
+      function (e) {
+        if (e.target.classList.contains('language')) {
+          this.language = e.target.textContent;
+          this._renderSearch(this.language, data.languages);
+        }
+        if (e.target.classList.contains('role')) {
+          this.language = e.target.textContent;
+          this._renderSearch(this.language, data);
+        }
+        if (e.target.classList.contains('level')) {
+          this.language = e.target.textContent;
+          this._renderSearch(this.language, data);
+        }
+        if (e.target.classList.contains('tool')) {
+          this.language = e.target.textContent;
+          this._renderSearch(this.language, data);
+        }
+      }.bind(this)
+    );
   }
 
   render(data) {
@@ -13,6 +82,7 @@ export default class App {
 
     const html = `
       <div class="item item-1">
+            <div class="active"></div>
             <div class="item-img">
               <img src="${this.data.logo}" alt="" />
             </div>
@@ -65,3 +135,20 @@ export default class App {
     this._parentElement.insertAdjacentHTML('beforeend', html);
   }
 }
+
+  // let lang = ""
+
+  // lan = ""
+
+  // langArr = []
+  // const filterByLang = () => {
+  //   langArr.filter(items => items.lan.filter(items => {return items === lang}))
+  // }
+
+  // whever i click on a language, filter the entire array to show which has it
+  //the click event will call the filter and
+  // the filter will call the render function
+
+  // const filterByLang = () => {
+  //   langArr.filter(items => items.lan.includes(lang)))
+  // }
