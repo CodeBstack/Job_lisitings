@@ -16,6 +16,7 @@ export default class App {
     this._clearAllInputElements(data);
   }
 
+  // Iterating the initial data to render elements
   _iterateData(data) {
     data.forEach(data => {
       this.render(data, !this.renderTrue);
@@ -33,18 +34,20 @@ export default class App {
 
     let langArr = [];
 
+    // Getting the textContent of each input elements and push it to the langArr
     for (let i = 0, l = this._inputContainer.children.length; i < l; i++) {
       langArr.push(this._inputContainer.children[i].children[0].textContent);
     }
 
+    //to remove duplicates from the langArr
     langArr.forEach(c => {
       if (!this.langArrNoDuplicate.includes(c)) {
         this.langArrNoDuplicate.push(c);
-        // console.log(this.langArrNoDuplicate);
       }
     });
   }
 
+  // Remove each input element
   _removeSearch(data) {
     this._inputContainer.addEventListener(
       'click',
@@ -60,6 +63,7 @@ export default class App {
             this._renderSearch(data);
           });
         });
+
         this._parentElement.innerHTML = '';
         data.forEach(data => this.render(data, !this.renderTrue));
 
@@ -68,19 +72,23 @@ export default class App {
     );
   }
 
+  // Clear all button function
   _clearAllInputElements(data) {
     this._clearAllBtn.addEventListener(
       'click',
       function () {
         this.langArrNoDuplicate.splice(0, this.langArrNoDuplicate.length);
-        // console.log(this.langArrNoDuplicate);
+
         this._inputContainer.innerHTML = '';
+
         this._parentElement.innerHTML = '';
+
         data.forEach(data => this.render(data, !this.renderTrue));
       }.bind(this)
     );
   }
 
+  // To get the item clicked
   _getClickedItem(data) {
     // console.log(data);
     this._parentElement.addEventListener(
@@ -118,6 +126,7 @@ export default class App {
     );
   }
 
+  // Where filtering occurs
   _filter(data) {
     this._parentElement.innerHTML = '';
 
@@ -131,20 +140,19 @@ export default class App {
         return data;
       }
     });
-    // console.log(this.langArrNoDuplicate);
 
-    // console.log(filteredData);
+    // To filter undefined out of the filteredData
     const finalFilter = filteredData.filter(data => {
       data === undefined;
       return data;
     });
-    // console.log(finalFilter);
 
     finalFilter.forEach(data => {
-      // console.log(data);
       this.render(data, this.renderTrue);
     });
   }
+
+  // The HTML markup
   _generateMarkup(data, render) {
     const html = `
     <div class="item item-1" id="${data.id}">
@@ -200,6 +208,7 @@ export default class App {
     return html;
   }
 
+  // Render function
   render(data, render) {
     const markup = this._generateMarkup(data, render);
 
