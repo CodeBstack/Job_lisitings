@@ -61,7 +61,6 @@ body {
 }
 
 .clear-each {
-  padding: 0 10px;
   outline: none;
   border: none;
   background: hsl(181, 56%, 39%);
@@ -73,6 +72,8 @@ body {
 .clear-each span {
   font-size: 35px;
   color: #fff;
+  padding: 0 10px;
+
 }
 
 .clear-all {
@@ -270,10 +271,3 @@ hr {
     flex-basis: 40%;
   }
 }
-
-/* @media (min-width: 1220px) {
-  .item-content {
-    flex-basis: 40%;
-    /* margin-left: -12rem; */
-  }
-} */

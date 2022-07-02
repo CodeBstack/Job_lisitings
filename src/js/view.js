@@ -49,24 +49,20 @@ export default class App {
     this._inputContainer.addEventListener(
       'click',
       function (e) {
-        if (
-          e.target.classList.contains('clear-each') ||
-          e.target.classList.contains('span')
-        ) {
-          this.langArrNoDuplicate.forEach((c, i) => {
-            if (c === e.target.parentNode.parentNode.children[0].textContent)
-              this.langArrNoDuplicate.splice(i, 1);
+        if (!e.target.classList.contains('span')) return;
+        this.langArrNoDuplicate.forEach((c, i) => {
+          if (c === e.target.parentNode.parentNode.children[0].textContent)
+            this.langArrNoDuplicate.splice(i, 1);
 
-            this._inputContainer.innerHTML = '';
+          this._inputContainer.innerHTML = '';
 
-            this.langArrNoDuplicate.forEach(data => {
-              this._renderSearch(data);
-              
-            });
-            this._parentElement.innerHTML = '';
-            data.forEach(data => this.render(data, !this.renderTrue));
+          this.langArrNoDuplicate.forEach(data => {
+            this._renderSearch(data);
           });
-        }
+        });
+        this._parentElement.innerHTML = '';
+        data.forEach(data => this.render(data, !this.renderTrue));
+
         // this._filter(data);
       }.bind(this)
     );
