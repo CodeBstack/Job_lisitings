@@ -12,7 +12,7 @@ export default class App {
     this.data = data;
     this._iterateData(data);
     this._getClickedItem(data);
-    this._removeSearch();
+    this._removeSearch(data);
     this._clearAllInputElements(data);
   }
 
@@ -61,7 +61,10 @@ export default class App {
 
             this.langArrNoDuplicate.forEach(data => {
               this._renderSearch(data);
+              
             });
+            this._parentElement.innerHTML = '';
+            data.forEach(data => this.render(data, !this.renderTrue));
           });
         }
         // this._filter(data);
